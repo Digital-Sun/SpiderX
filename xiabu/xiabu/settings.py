@@ -88,7 +88,9 @@ ROBOTSTXT_OBEY = False
 #ITEM_PIPELINES = {
 #    'tutorial.pipelines.TutorialPipeline': 300,
 #}
-
+ITEM_PIPELINES = {
+    'xiabu.pipelines.DuplicateFilterUrlPipeline': 10,  # 开启Pipeline组件的相关功能
+}
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
@@ -112,3 +114,6 @@ ROBOTSTXT_OBEY = False
 
 # Encodeing for json 2021-05-11 steve
 FEED_EXPORT_ENCODING = 'utf-8'
+
+# Disable Meta refresh redirect
+METAREFRESH_ENABLED = False

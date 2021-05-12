@@ -5,8 +5,12 @@
 
 import scrapy
 
-
-class TutorialItem(scrapy.Item):
+class BaiduNewsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    create_time = scrapy.Field()
+    title = scrapy.Field()
+    source = scrapy.Field()
+    time = scrapy.Field()
+    url = scrapy.Field()
+    content = scrapy.Field()
