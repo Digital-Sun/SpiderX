@@ -8,6 +8,7 @@ import scrapy
 class BaiduNewsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    key_word = scrapy.Field()
     create_time = scrapy.Field()
     title = scrapy.Field()
     source = scrapy.Field()
